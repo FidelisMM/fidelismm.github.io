@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Black Dragon</title>
+        <!-- Boostrap CSS & Icons-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <!-- Custom CSS -->
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.167.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.167.1/examples/jsm/"
+              }
+            }
+          </script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="main-landing">
+                <div class="metadata-clan">
+                    <span id="metadata-clan-tag"></span>
+                    <span id="metadata-clan-members"></span>
+                    <span id="metadata-clan-score"></span>
+                    <span id="metadata-clan-trophies"></span>
+                    <span id="metadata-clan-donations"></span>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="main-content-nav">
+                    <select id="data-ordering" class="form-select form-select-sm"></select>         
+                    <div id="metadata-data-time"></div>
+                </div>
+                <div class="metadata-activity-container">
+                    <div class="metadata-activity-map">                  
+                        <div id="metadata-activity-map"></div>
+                    </div>
+                </div>
+                <div id="member-canvas" class="member-canvas"></div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <!-- Bootstrap + Popper Script -->
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/a6af146403.js" crossorigin="anonymous"></script>
+        <!-- ApexCharts -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <!-- Custom Scripts -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
